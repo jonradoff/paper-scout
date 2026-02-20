@@ -1,0 +1,26 @@
+app = "paper-scout"  # Change to your Fly.io app name
+primary_region = "ewr"
+
+[build]
+
+[env]
+  FETCH_WINDOW_HOURS = "24"
+  CANDIDATE_THRESHOLD = "0.20"
+  MODEL_CACHE_DIR = "/data/models"
+  PYTHONPATH = "/app/src"
+  SCHEDULE_CRON_HOUR = "5"
+  SCHEDULE_CRON_MINUTE = "0"
+  SCHEDULE_TIMEZONE = "America/New_York"
+
+[mounts]
+  source = "model_cache"
+  destination = "/data/models"
+
+[[vm]]
+  size = "shared-cpu-2x"
+  memory = "1gb"
+
+# Secrets to set via `fly secrets set`:
+#   MONGODB_URI=mongodb+srv://...
+#   S2_API_KEY=...
+#   HF_TOKEN=...

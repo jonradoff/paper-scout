@@ -1,0 +1,43 @@
+{
+  "topics": [
+    "Multi-agent AI systems and coordination mechanisms",
+    "LLM agent architectures and tool use",
+    "AI agent evaluation frameworks and benchmarks",
+    "Model Context Protocol and agent-tool interfaces",
+    "Chess AI and game-playing agents including Maia",
+    "AI safety and alignment research",
+    "Agentic coding and AI-assisted software development",
+    "Retrieval augmented generation and knowledge systems",
+    "Social platforms for AI agents and agent-to-agent interaction",
+    "Small language models and efficient inference",
+    "AI infrastructure and compute optimization",
+    "Prompt engineering and LLM optimization techniques",
+    "Game development with AI integration",
+    "AI agent discovery and registry systems"
+  ],
+  "keywords": {
+    "high_weight": [
+      "multi-agent", "MCP", "model context protocol", "agent coordination",
+      "tool use", "function calling", "agentic", "agent benchmark",
+      "agent evaluation", "HiddenBench", "chess AI", "Maia",
+      "Claude", "Anthropic", "agent discovery", "agent registry"
+    ],
+    "medium_weight": [
+      "LLM agent", "autonomous agent", "code generation", "RAG",
+      "retrieval augmented", "prompt engineering", "AI safety",
+      "alignment", "RLHF", "constitutional AI", "small language model",
+      "inference optimization", "quantization", "AI infrastructure"
+    ],
+    "low_weight": [
+      "transformer", "attention mechanism", "fine-tuning", "embedding",
+      "vector database", "reinforcement learning", "game AI",
+      "natural language", "computer vision", "diffusion model"
+    ]
+  },
+  "tracked_labs": [
+    "Anthropic", "DeepMind", "OpenAI", "Meta FAIR", "Microsoft Research",
+    "Google Research", "Allen AI", "Cohere", "Mistral", "Stanford HAI",
+    "Berkeley AI Research", "CMU", "MIT CSAIL", "EleutherAI"
+  ],
+  "tracked_authors": []
+}

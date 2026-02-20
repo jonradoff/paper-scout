@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paper-scout"
+version = "0.1.0"
+description = "AI research paper ingestion and scoring pipeline"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "pymongo[srv]>=4.6",
+    "motor>=3.3",
+    "pydantic>=2.5",
+    "pydantic-settings>=2.1",
+    "sentence-transformers>=2.3",
+    "arxiv>=2.1",
+    "httpx>=0.27",
+    "apscheduler>=3.10",
+    "structlog>=24.1",
+    "beautifulsoup4>=4.12",
+    "numpy>=1.26",
+    "tenacity>=8.2",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+mcp = [
+    "mcp>=1.0",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.2",
+]
+
+[project.scripts]
+paper-scout = "paper_scout.scheduler:main"
+paper-scout-mcp = "mcp_server.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/paper_scout", "src/mcp_server"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
