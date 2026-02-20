@@ -36,7 +36,7 @@ Every day at a configured time, Paper Scout:
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/jradoff/paper-scout.git
+git clone https://github.com/jonradoff/paper-scout.git
 cd paper-scout
 python -m venv .venv
 source .venv/bin/activate
