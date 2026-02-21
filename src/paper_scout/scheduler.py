@@ -57,6 +57,7 @@ def main():
         ),
         id="paper_scout_pipeline",
         name="Paper Scout Daily Pipeline",
+        misfire_grace_time=3600,  # Allow up to 1 hour late before skipping
     )
 
     # Also run once at startup
