@@ -4,7 +4,7 @@ primary_region = "ewr"
 [build]
 
 [env]
-  FETCH_WINDOW_HOURS = "24"
+  FETCH_WINDOW_HOURS = "48"
   CANDIDATE_THRESHOLD = "0.20"
   MODEL_CACHE_DIR = "/data/models"
   PYTHONPATH = "/app/src"
