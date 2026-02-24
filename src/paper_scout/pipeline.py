@@ -134,7 +134,9 @@ def _store_paper(paper: Paper) -> bool:
     Returns True if the paper was new, False if it was a duplicate.
     """
     col = papers_col()
-    paper_dict = paper.model_dump()
+    # Exclude None values so sparse unique indexes (s2_paper_id, etc.)
+    # don't treat null as a duplicate value across documents.
+    paper_dict = {k: v for k, v in paper.model_dump().items() if v is not None}
 
     # Try to find existing by arxiv_id
     if paper.arxiv_id:
