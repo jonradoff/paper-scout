@@ -1,4 +1,4 @@
-app = "paper-scout"  # Change to your Fly.io app name
+app = "tarinth"
 primary_region = "ewr"
 
 [build]
